@@ -1,0 +1,14 @@
+.gradle
+.idea
+.settings
+bin
+build
+gen
+.classpath
+.project
+build.gradle.bak
+gradlew
+gradlew.bat
+local.properties
+proguard-project.txt
+SipStackHome.iml

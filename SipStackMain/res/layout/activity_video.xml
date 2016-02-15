@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainFrame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/video_relative"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/call_state"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="建立成功，开始说话"
+            android:visibility="gone" />
+
+        <!--<org.webrtc.videoengine.ViEAndroidGLES20-->
+        <!--android:id="@+id/vie_opeles20"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+        <SurfaceView
+            android:id="@+id/camera_preview"
+            android:layout_width="92dp"
+            android:layout_height="118dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="12dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/answer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/video_relative"
+            android:layout_weight="1"
+            android:text="接听" />
+
+        <Button
+            android:id="@+id/hangup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_relative"
+            android:layout_toEndOf="@+id/answer"
+            android:layout_toRightOf="@+id/answer"
+            android:layout_weight="1"
+            android:text="挂断" />
+
+        <Button
+            android:id="@+id/mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_relative"
+            android:layout_toEndOf="@+id/answer"
+            android:layout_toRightOf="@+id/answer"
+            android:layout_weight="1"
+            android:text="静音" />
+
+        <Button
+            android:id="@+id/speaker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/video_relative"
+            android:layout_toEndOf="@+id/answer"
+            android:layout_toRightOf="@+id/answer"
+            android:layout_weight="1"
+            android:text="扬声器" />
+    </LinearLayout>
+
+
+</LinearLayout>

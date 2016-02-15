@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimaryDark">@color/indigo_700</item>
+        <item name="android:colorPrimaryDark">@color/indigo_700</item>
+        <item name="colorPrimary">@color/indigo_500</item>
+        <item name="android:colorPrimary">@color/indigo_500</item>
+        <item name="android:textColorPrimary">@color/body_text_1</item>
+        <item name="android:textColor">@color/body_text_2</item>
+        <item name="android:textColorHighlight">@color/indigo_500</item>
+        <item name="colorAccent">@color/indigo_500</item>
+    </style>
+
+    <style name="AppBarTheme" parent="AppTheme">
+        <item name="android:windowTranslucentStatus">true</item>
+    </style>
+
+    <style name="SettingsTheme" parent=""></style>
+
+    <style name="ThemeApp" parent="AppTheme">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+</resources>

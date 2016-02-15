@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="transport_protocol"
+        android:title="媒体音量设置" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="使用SipStackHome自身音量"
+        android:title="使用软件音量" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置耳机音量"
+        android:key="eargain"
+        android:summary="10"
+        android:title="耳机音量" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置初始音量"
+        android:key="eargain"
+        android:summary="10"
+        android:title="初始音频" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置耳机音量"
+        android:key="eargain"
+        android:summary="10"
+        android:title="耳机音量" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置麦克风音量"
+        android:key="eargain"
+        android:summary="10"
+        android:title="麦克风音量" />
+
+    <PreferenceCategory
+        android:key="transport_protocol"
+        android:title="媒体设置" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="是否开启回音消除"
+        android:title="回音消除" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置回音消除算法"
+        android:key="eargain"
+        android:summary="WebRTC"
+        android:title="回音消除算法" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置音频编码器"
+        android:key="eargain"
+        android:summary="Speex"
+        android:title="音频编码器" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置视频编码器"
+        android:key="eargain"
+        android:summary="WebRTC"
+        android:title="视频编码器" />
+
+</PreferenceScreen>

@@ -1,0 +1,64 @@
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <include
+                android:id="@+id/toolbar"
+                layout="@layout/include_toolbar"></include>
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/sliding_tabs"
+                style="@style/MyCustomTabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:background="@color/indigo_500"
+                android:elevation="5dp"
+                android:minHeight="@dimen/abc_action_bar_default_height_material"
+                app:tabIndicatorColor="@color/white"
+                app:tabSelectedTextColor="@color/white" />
+
+            <com.crte.sipstackhome.customview.MultiSwipeRefreshLayout
+                android:id="@+id/swiperefresh"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sliding_tabs">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/view_pager"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+            </com.crte.sipstackhome.customview.MultiSwipeRefreshLayout>
+
+        </RelativeLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/call_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+            android:src="@drawable/ic_dialpad_white"
+            android:visibility="visible"
+            app:layout_anchor="@id/swiperefresh"
+            app:layout_anchorGravity="bottom|end"
+            app:theme="@style/FloatingButtonTheme" />
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/drawer_left"></include>
+
+</android.support.v4.widget.DrawerLayout>

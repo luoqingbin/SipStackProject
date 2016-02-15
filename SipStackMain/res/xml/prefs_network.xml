@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory
+        android:key="transport_protocol"
+        android:title="传输协议" />
+
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置传输协议"
+        android:key="eargain"
+        android:summary="UDP"
+        android:title="传输协议" />
+    <!--android:entryValues="@array/eargain_values"-->
+    <!--android:entries="@array/eargain_display_values"-->
+    <ListPreference
+        android:defaultValue="0.25"
+        android:dialogTitle="设置端口号"
+        android:key="eargain"
+        android:summary="UDP"
+        android:title="端口号" />
+
+    <PreferenceCategory
+        android:key="transport_protocol"
+        android:title="网络支持" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="检查是否有未读的录音留言"
+        android:title="使用WiFi网络" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="检查是否有未读的录音留言"
+        android:title="使用3G/4G网络" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="检查是否有未读的录音留言"
+        android:title="使用GPRS网络" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="检查是否有未读的录音留言"
+        android:title="使用EDGE网络" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="MWI_enabled"
+        android:summary="检查是否有未读的录音留言"
+        android:title="使用其他网络" />
+</PreferenceScreen>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- 简单配置 -->
+    <!--<PreferenceScreen-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:summary="简单配置"-->
+        <!--android:title="简单配置"></PreferenceScreen>-->
+
+    <PreferenceScreen
+        android:key="header_base"
+        android:icon="@drawable/ic_launcher"
+        android:summary="基本便利性设置"
+        android:title="基本设置">
+        <!--<extra-->
+        <!--android:name="preference_type"-->
+        <!--android:value="20" />-->
+    </PreferenceScreen>
+
+    <!-- 网络：SIP如何连接到网络 -->
+    <PreferenceScreen
+        android:key="header_network"
+        android:icon="@drawable/ic_launcher"
+        android:summary="SIP如何连接到网络"
+        android:title="网络设置">
+        <!--<extra-->
+            <!--android:name="preference_type"-->
+            <!--android:value="20" />-->
+    </PreferenceScreen>
+
+    <!-- 媒体：编码和来电铃声 -->
+    <PreferenceScreen
+        android:key="header_media"
+        android:icon="@drawable/ic_launcher"
+        android:summary="编码和来电铃声"
+        android:title="媒体媒体">
+        <!--<extra-->
+            <!--android:name="preference_type"-->
+            <!--android:value="0" />-->
+    </PreferenceScreen>
+
+    <!-- 用户界面：调整用户界面 -->
+    <!--<PreferenceScreen-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:summary="调整用户界面"-->
+        <!--android:title="用户界面">-->
+        <!--<extra-->
+            <!--android:name="preference_type"-->
+            <!--android:value="60" />-->
+    <!--</PreferenceScreen>-->
+
+    <!-- 呼叫选项：呼叫相关选项 -->
+    <!--<PreferenceScreen-->
+        <!--android:icon="@drawable/ic_launcher"-->
+        <!--android:summary="呼叫相关选项"-->
+        <!--android:title="呼叫选项">-->
+        <!--<extra-->
+            <!--android:name="preference_type"-->
+            <!--android:value="40" />-->
+    <!--</PreferenceScreen>-->
+</PreferenceScreen>

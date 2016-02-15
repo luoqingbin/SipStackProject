@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:key="base_settings"
+        android:title="基本设置" />
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="support_multiple_calls"
+        android:summary="是否开启自动应答功能"
+        android:title="自动应答" />
+
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:key="lock_wifi"
+        android:summary="在手机休眠状态下开启Wifi连接\n注意：如果关闭此选项在某些设备下将无法接收到来电信息"
+        android:title="关闭WiFi休眠" />
+
+</PreferenceScreen>

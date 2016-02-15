@@ -1,0 +1,48 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- actionbar 文字的颜色 -->
+        <item name="android:textColorPrimary">@color/body_text_1</item>
+        <!-- 修改默认颜色和menu文字颜色 -->
+        <item name="android:textColor">@color/body_text_2</item>
+        <!-- 各种控件的颜色 -->
+        <item name="colorAccent">@color/indigo_500</item>
+    </style>
+
+    <style name="FloatingButtonTheme" parent="AppTheme">
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="ToobarTheme" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="ThemeApp" parent="AppTheme">
+        <item name="android:textColorPrimary">#FFFFFF</item>
+    </style>
+
+    <style name="ClubToolbar" parent="Widget.AppCompat.Toolbar">
+        <item name="contentInsetStart">0dp</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabTextAppearance">@style/MyCustomTextAppearance</item>
+    </style>
+
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">false</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppBarTheme" parent="AppTheme">
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>
